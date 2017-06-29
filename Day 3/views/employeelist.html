@@ -48,7 +48,10 @@
         <td class="text-center">
             {{employee.departmentId.departmentName}}
         </td>
-        <!--TODO #HR5 add View button-->
+        <td class="text-center">
+            <button type="button" ng-click="viewEmployee(employee.employeeId)">View</button>
+        </td>
+            
 
     </tr>
 </table>
