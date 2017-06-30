@@ -1,0 +1,10 @@
+<div>
+    <select ng-change="changeColor()" ng-options="color.text for color in colors track by color.text" ng-model="myColor">
+    </select>
+
+
+    <select ng-options="color.text group by color.type for color in colors" ng-model="myColor2">
+    </select>
+
+    <span ng-class="saveColor">Some text</span>
+</div>
